@@ -1,11 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import {createBrowserRouter,RouterProvider} from 'react-router-dom'
+import Rtwo from './Components/Rtwo';
+import Rone from './Components/Rone';
 
 function App() {
+
+  const router = createBrowserRouter([
+    {path:'/',
+  element:<Rtwo/>},
+  {path:'about',element:<Rone/>}
+  ])
   return (
-    <div className="App">
-      
-    </div>
+    <RouterProvider router={router}/>
   );
 }
 
