@@ -7,7 +7,7 @@ function App() {
   const router = createBrowserRouter([
     {path:'/',
   element:<Rtwo/>},
-  {path:'about',element:<Rone/>}
+  // {path:'about',element:<Rone/>}
   ])
   return (
     <RouterProvider router={router}/>
